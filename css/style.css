@@ -371,7 +371,6 @@ color: var(--title-color);
 
   .social-link:hover {
     background-color: var(--accent-color);
-
   }
 
   .social-link:hover .social-svg {
@@ -427,6 +426,15 @@ border-radius: 4px;
   background-color: var(--bgc-footer);
 }
 
+.footer .container {
+  display: flex;
+}
+
+.footer .address {
+  margin-right: 70px;
+  margin-left: 0;
+}
+
 .footer-address {
   font-size: 14px;
 line-height: 1.71;
@@ -449,6 +457,29 @@ letter-spacing: 0.03em;
 .footer-address .item:not(:last-child) {
 margin-bottom: 9px;
 }
+
+.join-title {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: 700;
+letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.join .social-link {
+background: rgba(255, 255, 255, 0.1);
+}
+
+.join .social-svg {
+  fill: var(--white-color);
+}
+
+.join .social-link:hover {
+    background-color: var(--accent-color);
+  }
+
+
 
 
 /* Portfolio */
