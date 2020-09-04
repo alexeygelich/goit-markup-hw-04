@@ -148,6 +148,32 @@ margin-right: 93px;
   color: var(--accent-color);
 }
 
+.top-address .link:hover,
+.top-address .link:focus {
+  color: var(--accent-color);
+}
+
+.top-address .item{
+display: flex;
+align-items: center;
+}
+
+.top-address .item:first-child::before{
+  content: "";
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url("../image/envelope.svg");
+}
+
+.top-address .item:last-child::before{
+  content: "";
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url("../image/smartphone.svg");
+}
+
 .top-address .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -173,6 +199,7 @@ margin-right: 93px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--title-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) , url("../image/hero-Img.jpg");
 }
 
 .hero .container {
@@ -233,6 +260,32 @@ color: var(--title-color);
   margin-right: 30px;
 }
 
+.advantage .item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.advantage .item:first-child::before {
+  background-image: url(../image/antenna.svg), linear-gradient(#F5F4FA, #F5F4FA);
+}
+
+.advantage .item:nth-child(2)::before {
+  background-image: url(../image/clock.svg), linear-gradient(#F5F4FA, #F5F4FA);
+}
+
+.advantage .item:nth-child(3)::before {
+  background-image: url(../image/diagram.svg), linear-gradient(#F5F4FA, #F5F4FA);
+}
+
+.advantage .item:nth-child(4)::before {
+  background-image: url(../image/astronaut.svg), linear-gradient(#F5F4FA, #F5F4FA);
+}
+
 /* Чем мы занимаемся */
 
 .work {
@@ -286,13 +339,48 @@ color: var(--title-color);
 
 .specialty {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   text-align: center;
 }
 
 .photo {
   margin-bottom: 30px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-svg {
+  fill:#AFB1B8;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+  .social-link:hover {
+    background-color: var(--accent-color);
+
+  }
+
+  .social-link:hover .social-svg {
+fill: var(--white-color);
+  }
+
+
+
+
 
 /* Footer */
 
