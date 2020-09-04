@@ -1,0 +1,403 @@
+:root {
+  --main-color: #757575;
+  --accent-color: #2196f3;
+  --title-color: #212121;
+  --white-color: #ffffff;
+  --bgc-footer: #2f303a;
+  --footer-color: color: rgba(255, 255, 255, 0.6);
+  --btn-filter-color: #F5F4FA;
+  --cards-border-color: #EEEEEE;
+}
+
+/* Base */
+
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: var(--main-color);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+      font-style: normal;
+}
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--title-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+margin-right: 93px;
+
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.logo-accent {
+ color: var(--accent-color);
+}
+
+.top-menu {
+  display: flex;
+}
+
+.top-menu .link {
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.top-menu .link:hover,
+.top-menu .link:focus {
+  color: var(--accent-color);
+}
+
+.top-menu .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.top-address {
+  display: flex;
+}
+
+.top-address .link {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.top-address .link:hover,
+.top-address .link:focus {
+  color: var(--accent-color);
+}
+
+.top-address .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  margin-left: auto;
+}
+
+/* Герой */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--title-color);
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.main-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+
+width: 696px;
+
+  color: var(--white-color);
+}
+
+/* Преимущества */
+
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantage .text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+
+letter-spacing: 0.03em;
+}
+
+.advantage-title {
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--title-color);
+}
+
+.advantage .list {
+  display: flex;
+}
+
+.advantage .item {
+  width: 270px;
+}
+
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Чем мы занимаемся */
+
+.work {
+  margin-bottom: 94px;
+}
+
+.work .list {
+  display: flex;
+}
+
+.work .item {
+  width: 370px;
+}
+
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Команда */
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team .list {
+  display: flex;
+}
+
+.team .item {
+  padding-bottom: 30px;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+text-align: center;
+color: var(--title-color);
+}
+
+.specialty {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.photo {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bgc-footer);
+}
+
+.footer-address {
+  font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
+.footer .logo {
+  margin-bottom: 30px;
+  color: var(--white-color);
+}
+
+.footer-address .link {
+  color: var(--footer-color);
+}
+
+.footer-address .contact-address {
+    color: var(--white-color);
+}
+
+.footer-address .item:not(:last-child) {
+margin-bottom: 9px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* filter */
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.filter .button {
+  background-color: var(--btn-filter-color);
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.filter .button:hover, .filter .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  
+}
+
+.cards .item {
+  margin: 15px;
+  width: 370px;
+}
+
+
+
+.name-card {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--title-color);
+}
+
+.text-card {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+}
+
+.card-desc {
+  padding: 20px 24px;
+border-left: 1px solid var(--cards-border-color);
+border-right: 1px solid var(--cards-border-color);
+border-bottom: 1px solid var(--cards-border-color);
+}
