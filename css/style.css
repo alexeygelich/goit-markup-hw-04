@@ -376,11 +376,12 @@ color: var(--title-color);
   border-radius: 50%;
 }
 
-  .social-link:hover {
+  .social-link:hover, .social-link:focus {
     background-color: var(--accent-color);
   }
 
-  .social-link:hover .social-svg {
+  .social-link:hover .social-svg,
+  .social-link:focus .social-svg {
 fill: var(--white-color);
   }
 
@@ -415,11 +416,13 @@ box-sizing: border-box;
 border-radius: 4px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.clients-link:hover .clients-svg {
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
   fill: var(--accent-color);
 }
 
@@ -482,7 +485,8 @@ background: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
 }
 
-.join .social-link:hover {
+.join .social-link:hover,
+.join .social-link:focus {
     background-color: var(--accent-color);
   }
 
@@ -537,7 +541,8 @@ letter-spacing: 0.03em;
 color: var(--title-color);
 }
 
-.filter-link:hover {
+.filter-link:hover,
+.filter-link:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -557,7 +562,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   width: 370px;
 }
 
-.cards .link:hover {
+.cards .link:hover,
+.cards .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
