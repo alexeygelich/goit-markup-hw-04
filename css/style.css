@@ -116,13 +116,16 @@ margin-right: 93px;
   display: flex;
 }
 
-.top-menu .link {
+.top-menu--link {
+  display: flex;
+  align-items: center;
+  height: 80px;
   font-weight: 500;
   color: var(--title-color);
 }
 
-.top-menu .link:hover,
-.top-menu .link:focus {
+.top-menu--link:hover,
+.top-menu--link:focus {
   color: var(--accent-color);
 }
 
@@ -138,19 +141,24 @@ margin-right: 93px;
   display: flex;
 }
 
-.top-address .link {
+.top-address--link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   color: var(--main-color);
 }
 
-.top-address .link:hover,
-.top-address .link:focus {
+.top-address--link:hover,
+.top-address--link:focus {
   color: var(--accent-color);
 }
 
-.top-address .link:hover,
-.top-address .link:focus {
-  color: var(--accent-color);
+.top-address--link:hover .mail-svg, .top-address--link:focus .mail-svg {
+  fill: var(--accent-color);
+}
+
+.top-address--link:hover .phone-svg, .top-address--link:focus .phone-svg {
+  fill: var(--accent-color);
 }
 
 .top-address .item{
@@ -158,20 +166,14 @@ display: flex;
 align-items: center;
 }
 
-.top-address .item:first-child::before{
-  content: "";
+.mail-svg {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-image: url("../image/envelope.svg");
+  fill: var(--main-color);
 }
 
-.top-address .item:last-child::before{
-  content: "";
+.phone-svg {
   margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url("../image/smartphone.svg");
+  fill: var(--main-color);
 }
 
 .top-address .item:not(:last-child) {
@@ -267,7 +269,17 @@ color: var(--title-color);
   margin-right: 30px;
 }
 
-.advantage .item::before {
+.advantage--icon {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--btn-filter-color);
+}
+
+/* .advantage .item::before {
   content: "";
   display: block;
   width: 270px;
@@ -291,7 +303,7 @@ color: var(--title-color);
 
 .advantage .item:nth-child(4)::before {
   background-image: url(../image/astronaut.svg), linear-gradient(#F5F4FA, #F5F4FA);
-}
+} */
 
 /* Чем мы занимаемся */
 
